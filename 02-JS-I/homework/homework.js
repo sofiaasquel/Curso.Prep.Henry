@@ -139,19 +139,20 @@ function elevarAlCubo(num) {
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código: 
-  return math.pow (num,exponent);
+  return math.pow (num, exponent);
 }
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  var resto = num % 1;
+   var resto = num % 1;
    var entero = num - resto;
    if (resto >= 0.5) {
-    return entero + 1;
-  } else {
-   return entero;
+     return entero + 1;
+   } else {
+     return entero;
    }
+  return Math.round(num);
 }
 
 function redondearHaciaArriba(num) {
@@ -163,7 +164,8 @@ function redondearHaciaArriba(num) {
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  return math.random();
+
+  return math.random(num);
 }
 
 function esPositivo(numero) {
@@ -173,7 +175,7 @@ function esPositivo(numero) {
   //Si el número es 0, devuelve false
   if (numero === 0) {
     return false;
-  } else if (number > 0) {
+  } else if (numero > 0) {
     return "es positivo";
   } else {
     return "es negativo";
